@@ -13,7 +13,22 @@ Prepare the lists from each linear equations and assign in np.array()
 Using the np.linalg.solve(), we can find the solutions.
 ### Step 4: 
 End the program
+
+
 ## Program:
+
+```
+#Program to find the solution for the given linear equations.
+#Developed by: Aashik 
+#RegisterNumber: 212225040005
+import os 
+os.environ["OPENBLAS_NUM_THREADS"]="1"
+import numpy as np 
+A = np.array([[5,-3,-10],[2,2,-3],[-3,-1,5]])
+B = np.array([-9,4,-1])
+le = np.linalg.solve(A,B)
+print(le)
+```
 
 ## Output:
 <img width="1549" height="691" alt="Screenshot 2026-06-02 125630" src="https://github.com/user-attachments/assets/3ccf97fd-6a71-4069-b8b5-501624752023" />
